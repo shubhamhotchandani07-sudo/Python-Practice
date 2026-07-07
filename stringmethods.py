@@ -56,3 +56,56 @@ print(r.rstrip())
 k="sub-domain-01"
 print(k.upper())
 
+p="python"
+print(len(p))
+
+o="coder_99"
+print(o.isalnum())
+
+a="shu bham"
+print(a.count(""))
+   
+text = "Python"
+i = 0
+while i < 6:
+    print(text[i])
+    i = i + 1
+
+a="shubham"
+i=0
+while i<=5:
+    print(a[i])
+    i+=1
+
+l="rohit"
+i=len(l)-1
+while i>=0:
+    print(l[i])
+    i-=1
+
+q="shubham"
+vow=0
+i=0
+while i<len(q):
+    if q[i] in "aeiouAEIOU":
+        vow+=1
+    i+=1
+print(vow)
+
+l="hello world how are you"
+count=0
+i=0
+while i<len(l):
+    if l[i] in " ":
+        count=count+1
+    i=i+1
+print(count)
+
+
+g="shubham"
+j=""
+i=0
+while i<len(g):
+    b=b+a[i]
+    i+=1
+print(b)
