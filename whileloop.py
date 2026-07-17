@@ -10,7 +10,7 @@ while count<=50:
 count=50
 while count>=1:
     print(count)
-    count=count-1
+    count=count-1 
 
 #COUNTING FROM -1 TO -50 BY WHILE LOOP
 
@@ -39,3 +39,4 @@ numbers=50
 while numbers<=80:
     print(numbers)
     numbers=numbers+2 
+
