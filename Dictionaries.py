@@ -112,3 +112,8 @@ B={"Name":"Shubham","City":"Jaipur","Roll":70,"Age":80}
 copy=B.copy()
 print(copy)
 
+a={"name":"shubham","class":"BCA","City":"jaipur"}
+print(a.keys())
+
+a={"name":"shubham","class":"BCA","City":"jaipur"}
+print(a.items())
