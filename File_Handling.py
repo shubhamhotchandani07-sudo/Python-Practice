@@ -68,7 +68,7 @@ while i<len(b):
 # c.write(b)
 
 #    **Take a word from the user and count how many times that word appears across an entire file?**
-# a=open("abc.txt","r")
+# a=open("abc.txt","r")dfddede
 # b=a.read()
 # print(b)
 # c=input("Enter a Word")
