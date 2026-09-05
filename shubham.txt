@@ -1,0 +1,3 @@
+print(9)
+print('Shubham')
+print(49.50)

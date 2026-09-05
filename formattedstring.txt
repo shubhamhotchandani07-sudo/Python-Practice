@@ -1,0 +1,33 @@
+a="kohli";
+print(f"virat {a} is king of cricket\n")
+
+b="Shubham"
+print(f"My name is {b}\n")
+
+c="love"
+print(f"I {c} my india\n")
+
+d="IPS"
+print(f"{d} college Jaipur\n")
+
+e="scan"
+f="code"
+print(f"please {e} QR {f} for warranty\n")
+
+g="\a"
+h="\b"
+i="programming"
+print(f"{g} and {h} both are escape sequence in {i}\n")
+
+j="90"
+k="70"
+l="50"
+m="95"
+print(f"Marks in class 12th\nAccounts={j}\nEconomics={k}\nBusiness studies={l}\nEnglish={m}\n")
+
+n="3"
+o="python"
+p="INT(Integer)"
+q="float"
+r="String"
+print(f"There are {n} Datatype in {o}\n\n1st) {p}\n2nd) {q}\n3rd) {r}")

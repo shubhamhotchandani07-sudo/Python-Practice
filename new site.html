@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            padding: 10px 50px;
+            box-shadow: 0px 0px 0px 3px grey;
+            height: 60px;
+            
+        }
+        a{
+            color: rgb(247, 224, 182);
+            font-family: sora;
+            text-decoration: none;
+            margin-left: 8px;
+            font-size: 24px;
+            position: relative;
+            letter-spacing: 2px;
+            
+        }
+        a:hover{
+          text-decoration: none;
+          color:#f9fd06;
+        }
+        h4{
+            color: rgb(247, 224, 182);
+            font-family: 'bebas neue';
+            font-size: 50px;
+            line-height: 1;
+            font-weight: bold;
+            margin-right: 725px;
+        }
+        body {
+  margin: 0;
+  font-family: arial;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: 4px auto;
+  height: 580px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 650px;
+  object-fit: contain;
+  background-color: rgb(219, 215, 215);
+  flex-shrink: 0;
+  
+}
+
+/* Buttons */
+.prev, .next {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  
+}
+
+.dots .active {
+  opacity: 1;
+  background: red;
+}
+   .brand{
+    border: 1px solid black;
+    height: 1370px;
+    width: cover;
+    background: #868e91;
+background: linear-gradient(135deg,#0c0c0c,#698669,#08b3aab2);
+   } 
+   .img1{
+    height: 350px;
+    padding-left: 10px;
+    padding-top: 10px;
+   } 
+   .img2{
+    height: 350px;
+    padding-left: 20px;
+    padding-top: 10px;
+   }   
+   h1{
+    color: white;
+    font-size: 50px;
+   }
+   h2{
+    color: white;
+    font-size: 35px;
+   }
+   .img3{
+    height: 350px;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   }  
+   .img4{
+    height: 350px;
+    padding-left: 40px;
+    padding-top: 10px;
+   }  
+   .img5{
+    height: 350px;
+    padding-left: 38px;
+    padding-top: 10px;
+   }  
+   .img6{
+    height: 350px;
+    padding-left: 40px;
+    padding-top: 10px;
+   }
+   .img7{
+    height: 340px;
+    width: 210px;
+    padding-left: 10px;
+    padding-top: 10px;
+   }
+   .img8{
+    height: 340px;
+    width: 210px;
+    padding-left: 24px;
+    padding-top: 10px;
+   }
+   .img9{
+    height: 340px;
+    width: 210px;
+    padding-left: 33px;
+    padding-top: 10px;
+   }
+   .img10{
+    height: 340px;
+    width: 210px;
+    padding-left: 42px;
+    padding-top: 10px;
+   }
+   .img11{
+    height: 340px;
+    width: 210px;
+    padding-left: 40px;
+    padding-top: 10px;
+   }
+   .img12{
+    height: 340px;
+    width: 210px;
+    padding-left: 42px;
+    padding-top: 10px;
+   }
+   .brand2{
+    border: 1px solid black;
+    height: 370px;
+    width: cover;
+    background: #868e91;
+background: linear-gradient(135deg,#0c0c0c,#698669,#08b3aab2);
+   }
+   .img13{
+    height: 340px;
+    width: 210px;
+    padding-left: 9px;
+    padding-top: 10px;
+   }
+   .img14{
+    height: 340px;
+    width: 210px;
+    padding-left: 24px;
+    padding-top: 10px;
+   }
+   .img15{
+    height: 340px;
+    width: 210px;
+    padding-left: 32px;
+    padding-top: 10px;
+   }
+   .img16{
+    height: 340px;
+    width: 210px;
+    padding-left: 42px;
+    padding-top: 10px;
+   }
+   .img17{
+    height: 340px;
+    width: 210px;
+    padding-left: 43px;
+    padding-top: 10px;
+   }
+   .img18{
+    height: 340px;
+    width: 210px;
+    padding-left: 41px;
+    padding-top: 10px;
+   }
+  body{
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+  .trending{
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .trending h2{
+    margin-bottom: 20px;
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card{
+    background: #fff;
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: relative;
+    right: 4px;
+    background: linear-gradient(to bottom,#ffffff,#c7bb9e);
+  }
+  .card:hover{
+    transform: translateY(-8px);
+  }
+  .card img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .card h3{
+    margin: 10px 0 5px;
+  }
+  .desc{
+    font-size: 14px;
+    color: #101010;
+  }
+  .price{
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .price span{
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+  }
+  .price b{
+    color: orange;
+    margin-left: 5px;
+  }
+  button{
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover{
+    background: #444;
+  }
+  .bigcontainer{
+    height: 5000px;
+    width: 1440px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px 2px grey;
+    border-radius: 10px;
+    margin-left: 23px;
+    background: #dfeaed;
+background: linear-gradient(90deg, rgba(223, 234, 237, 1) 0%, rgba(133, 153, 143, 1) 50%, rgba(247, 243, 208, 1) 100%);
+  }
+  .whychooseus{
+    height: 250px;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #f3f7b0;
+background: linear-gradient(90deg, rgba(243, 247, 176, 1) 0%, rgba(219, 224, 117, 1) 50%, rgb(188, 183, 142) 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-left: 250px;
+  }
+  .why{
+    color: black;
+    font-family: 'playfair display',serif;
+    margin-top: 10px;
+  }
+  .freedelievery{
+    border: 1px solid black;
+    height: 160px;
+    width: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: -10px;
+  }
+  .freedelieveryp{
+    position: relative;
+    top: -44px;
+    left: 5px;
+  }
+  .freedelievery2{
+    border: 1px solid black;
+    height: 160px;
+    width: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-top: -162px;
+  }
+  .freedelieveryp2{
+    position: relative;
+    top: -35px;
+    left: 5px;
+  }
+  .freedelievery3{
+    border: 1px solid black;
+    height: 160px;
+    width: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-top: -162px;
+  }
+  .freedelieveryp3{
+    position: relative;
+    top: -35px;
+    left: 5px;
+  }
+  .freedelievery4{
+    border: 1px solid black;
+    height: 160px;
+    width: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 800px;
+    margin-top: -162px;
+  }
+  .freedelieveryp4{
+    position: relative;
+    top: -35px;
+    left: 5px;
+  }
+  .footer{
+    height: 750px;
+    width: cover;
+    border: 1px solid black;
+    left: 0%;
+    background-color: #444;
+  }
+  .dropdown {
+            display: none; 
+            position: absolute;
+            background-color: #464545;
+            min-width: 160px;
+            box-shadow: 0px 8px 8px rgba(0,0,0,0.2);
+            z-index: 8;
+            top: 100%;
+            left: 0;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .dropdown a {
+            color: #fffdfd !important; 
+            padding: 12px 16px;
+            display: block;
+            width: 100%;
+        }
+
+        .dropdown a:hover {
+            background-color: #060606;
+            position: relative;
+            right: 6px;
+            width: 130px;
+            color: yellow;
+        }
+
+        /* Hover Logic: Bina JS ke */
+        .menu-item:hover .dropdown {
+            display: block; 
+        }
+        .menu-item {
+            position: relative; 
+        }
+
+        .menu-item a {
+            display: block;
+            color: #f9f2f2; 
+            padding: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <strong><h4>DapperDudes</h4></strong>
+            <a href="">Home</a>
+          <li class="menu-item">
+            <a style="color: rgb(247, 224, 182);" href="">Jeans</a>
+            <div class="dropdown">
+              <a href="looseFit jeans.html">Loose Fit</a>
+              <a href="StraightFit.html">Straight Fit</a>
+              <a href="Boot cut.html">Boot Cut</a>
+            </div>
+          </li>  
+            <li class="menu-item">
+              <a style="color: rgb(247, 224, 182);" href="">Shirts</a>
+            <div class="dropdown">
+              <a href="Cotton Linen Shirts.html">Cotton Linen Shirts</a>
+              <a href="OXFORDS.html">OXFORDS</a>
+              <a href="Cuban collar shirts.html">Cuban Collar Shirts</a>
+            </div>
+            </li>
+            <a href="">T-Shirts</a>
+        </div>
+        
+    </nav>
+    
+    
+        <div class="slider">
+  <div class="slides">
+
+    <div class="slide">
+      <img src="assets/Gemini_Generated_Image_3sx9243sx9243sx9.png" height="100px" width="cover">
+    </div>
+
+    <div class="slide">
+      <img src="assetS/Gemini_Generated_Image_xqzbtpxqzbtpxqzb.png">
+    </div>
+
+    <div class="slide">
+      <img src="assetS/Gemini_Generated_Image_aipbi1aipbi1aipb.png">
+    </div>
+
+    <div class="slide">
+      <img src="assetS/Gemini_Generated_Image_xrk8pjxrk8pjxrk8.png">
+    </div>
+
+    <div class="slide">
+      <img src="assetS/Gemini_Generated_Image_id3bmmid3bmmid3b.png">
+    </div>
+
+  <button class="next">&#10095;</button>
+
+  <!-- Dots -->
+  </div>
+
+  <!-- Buttons -->
+  <button class="prev">&#10094;</button>
+  <div class="dots"></div>
+</div>
+
+<script>
+let index = 0 ;
+const slides = document.querySelector(".slides");
+const totalSlides = document.querySelectorAll(".slide").length;
+const dotsContainer = document.querySelector(".dots");
+
+for (let i = 0; i < totalSlides; i++) {
+  let dot = document.createElement("span");
+  dot.addEventListener("click", () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+}
+
+const dots = document.querySelectorAll(".dots span");
+
+function updateSlider() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+function nextSlide() {
+  index = (index + 1) % totalSlides;
+  updateSlider();
+}
+
+function prevSlide() {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateSlider();
+}
+
+function goToSlide(i) {
+  index = i;
+  updateSlider();
+}
+
+// Button events
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+// Auto slide
+setInterval(nextSlide, 3000);
+
+// Init
+updateSlider();
+</script>
+<br>
+<div class="brand"><br><br>
+ <center><b><h1>The Premium Edit</h1></b>             
+  <b><h2>Experience Timeless Sophitisian <br>Premium Brands</h2></b></center> <br>
+  <img class="img1" src="assets/tommy.png" alt="">
+  <img class="img2" src="assets/calvin klein.png" alt="">
+  <img class="img3" src="assets/aher.png" alt="">
+  <img class="img4" src="assets/aymbol prem.png" alt="">
+  <img class="img5" src="assets/columbia.png" alt="">
+  <img class="img6" src="assets/lacoste_1_352x580._CB792410991_.png" alt="">
+  <img class="img7" src="assets/rayban_1_352x580._CB792410991_.png" alt="">
+  <img class="img8" src="assets/mont_1_352x580._CB792410991_.png" alt="">
+  <img class="img9" src="assets/ted_1_352x580._CB792410991_.png" alt="">
+  <img class="img10" src="assets/oakl_1_352x580._CB792410991_.png" alt="">
+  <img class="img11" src="assets/shishen_1_352x580._CB792410991_.png" alt="">
+  <img class="img12" src="assets/carrera_1_352x580._CB792410991_.png" alt="">
+  <div class="brand2">
+    <img class="img13" src="assets/Tshirt._CB792405874_.png" alt="">
+    <img class="img14" src="assets/Polo._CB792405874_.png" alt="">
+    <img class="img15" src="assets/Shirts._CB792405874_.png" alt="">
+    <img class="img16" src="assets/Denims._CB792405874_.png" alt="">
+    <img class="img17" src="assets/shorts._CB792405874_.png" alt="">
+    <img class="img18" src="assets/Innerwear._CB792405874_.png" alt="">
+  </div>
+</div><br><br>
+<div class="bigcontainer">
+  <section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif;">Trending Now</h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/sunshine sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Relax Fit Sando For Men</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/sando peach bronco.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Shirt</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/house cram sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Sleves</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/goku sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Sleves</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+  <section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/dragon sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Relax Fit Sando For Men</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/goku liac sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Shirt</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/navy blue sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Sleves</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/positive sando.jpg" alt="">
+      <h3>Sando</h3>
+      <p class="desc">Bronco Polos Cut Sleves</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+  <section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/trousers.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 1690 <span>RS2890</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/cream trouser with shirt.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS1790 <span>RS2790</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/trouser h&m.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 890 <span>RS 1290</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/shubham linen h&m.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 990 <span>RS 1690</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+<section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/trouser with jeans jacket.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/coofee trousers.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/trouser cofe shirt.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img  src="assets/mehroom trousers.avif" alt="">
+      <h3>Trousers</h3>
+      <p class="desc">Regular Fit Linen-blend trousers</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+<section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/work wear jacket.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/grey jacket.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/Boxy overshirt.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img  src="assets/asthetic shirts.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+<section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/collared cotton jacket.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/checked shirt.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/blue overshirt.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img  src="assets/ice shirt.avif" alt="">
+      <h3>Jacket Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+<section class="trending">
+  <h2 style="color: black; font-family: 'Times New Roman', Times, serif"></h2><br>
+  <div class="card-container">
+    <div class="card">
+      <img src="assets/linen shirt ice.avif" alt="">
+      <h3>Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/premium selection shirt.avif" alt="">
+      <h3>Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS790 <span>RS1390</span><b>43% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="assets/bottle green shirt.avif" alt="">
+      <h3>Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img  src="assets/grey white linen.avif" alt="">
+      <h3> Shirts</h3>
+      <p class="desc">Boxy-style overshirt</p>
+      <p class="price">RS 790 <span>RS 1190</span><b>47% OFF</b></p>
+      <button>Add To Cart</button>
+    </div>
+  </div>
+</section>
+</div><br><br>
+<div class="whychooseus">
+  <h2 class="why" align="center">Why Choose Us</h2>
+  <div class="freedelievery">
+   <center><img style="height: 60px; width: 60px; color: yellow;" src="assets/fast-delivery.png" alt=""></center> 
+    <center><h3 style="position: relative; top: -30px;">Free Delievery</h3></center>
+    <p class="freedelieveryp">Get Your favourite Style Delieverd to your Doorstep at no extra Cost</p>
+  </div>
+   <div class="freedelievery2">
+   <center><img style="height: 50px; width: 50px; color: yellow;" src="assets/credit-card.png" alt=""></center> 
+    <center><h3 style="position: relative; top: -20px;">Secure Payments</h3></center>
+    <p class="freedelieveryp2">Safe Checkout With Trusted Methods </p>
+  </div>
+  <div class="freedelievery3">
+   <center><img style="height: 50px; width: 50px; color: yellow;" src="assets/return.png" alt=""></center> 
+    <center><h3 style="position: relative; top: -20px;">Easy Returns</h3></center>
+    <p class="freedelieveryp3">Easy returns Within no extra Charges Quick Return Process</p>
+  </div>
+  <div class="freedelievery4">
+   <center><img style="height: 50px; width: 50px; color: yellow;" src="assets/premium-quality.png" alt=""></center> 
+    <center><h3 style="position: relative; top: -20px;">Premium <br>Quality</h3></center>
+    <p class="freedelieveryp4">Top Quality Fabrics Made to Last</p>
+  </div>
+</div><br><br>
+<footer>
+  <div class="footer">
+    <img style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" src="assets/sale banner.webp" alt="" height="400px" width="1490px">
+    <h3 style="position: relative; top: 10px; color: #f6e1a3;padding-left: 50px; ">Brand Name</h3><br>
+    <strong><h2 style="color: #f7f8e3; position: relative; top: -50px;padding-left: 20px;font-family: 'playfair display',serif; ">Dapper Dudes</h2></strong>
+    <strong><p style="position: relative; top: -70px; left: 20px; color: #dfeaed;">Premium Essentials For the <br> Modren Gentleman</p></strong>
+    <h3 style="position: relative; top: -202px; color: #f6e1a3;left: 330px; ">Shop</h3>
+    <a  style="position: relative;top: -210px; left: 280px; color: rgb(221, 208, 208);" href="">New Arrivals</a>
+    <a style="position: relative;top: -170px; left: 135px; color: rgb(221, 208, 208);"  href="">T-Shirts</a>
+    <a style="position: relative;top: -130px; left: 30px; color: rgb(221, 208, 208);"  href="">Shirts</a>
+    <a style="position: relative;top: -90px; left: -60px; color: rgb(221, 208, 208);"  href="">Jeans</a>
+
+    <h3 style="position: relative; top: -290px; color: #f6e1a3;left: 550px;">Customer Care</h3>
+    <a style="position: relative;top: -298px; left: 500px; color: rgb(221, 208, 208);" href="">Track Your Order</a>
+    <a style="position: relative;top: -255px; left: 285px; color: rgb(221, 208, 208);"  href="">Shipping Policy</a>
+    <a style="position: relative;top: -215px; left: 70px; color: rgb(221, 208, 208);"   href="">Return & Exchanges</a>
+    <a style="position: relative;top: -170px; left: -180px; line-height: 20px; color: rgb(221, 208, 208);" href="">Payment Options</a>
+
+    <h3 style="position: relative; top: -375px; color: #f6e1a3;left: 890px;">Company</h3>
+    <a style="position: relative;top: -380px; left: 860px; color: rgb(221, 208, 208);" href="">About Us</a>
+    <a style="position: relative;top: -340px; left: 740px; color: rgb(221, 208, 208);"  href="">Carrer</a>
+    <a style="position: relative;top: -300px; left: 610px; color: rgb(221, 208, 208);" href="">Store Locator</a>
+    <a style="position: relative;top: -260px; left: 450px; color: rgb(221, 208, 208);" href="">Our Story</a>
+    <h3 style="position: relative; top: -460px; color: #f6e1a3;left: 1250px; ">Stay Connected </h3>
+    <h3 style="position: relative; left: 1220px; top: -465px; color: white;">Sign up for Early Access</h3>
+    <h3 style="position: relative; left: 1220px; top: -475px; color: rgb(250, 250, 8);">& 10% OFF</h3>
+    <input type="text" style="position: relative; top: -475px; left:1230px;width: 200px; height: 40px; " placeholder="Enter Your  E-Mail">
+    <button style="position: relative; left: 1020px; top: -420px; width: 200px; background-color: rgb(39, 39, 39);">Join</button>
+    <hr style="position: relative; top: -400px;">
+   <a href=""><img style="height: 25px; position: relative; top: -390px; left: 4px;" src="assets/instagram.png" alt=""></a> 
+   <a href=""><img style="height: 25px; position: relative; top: -390px; left: 0px;" src="assets/facebook.png" alt=""></a>
+   <a href=""><img style="height: 30px; position: relative; top: -388px; left: 0px;" src="assets/youtube.png" alt=""></a> 
+   <div style="border: 1px solid black; height: 40px; width: 60px;position: relative; left: 900px; top: -430px; background-color: white; border-radius: 5px;" class="visa">
+    <center><img style="height: 50px; width: 50px;position: relative; top: -3px ;" src="assets/visa.png" alt=""></center>
+   </div>
+   <div style="border: 1px solid black; height: 40px; width: 60px;position: relative; left: 1000px; top: -472px; background-color: white; border-radius: 5px;" class="visa">
+    <center><img style="height: 50px; width: 50px;position: relative; top: -3px ;" src="assets/google-pay.png" alt=""></center>
+   </div>
+   <div style="border: 1px solid black; height: 40px; width: 60px;position: relative; left: 1100px; top: -515px; background-color: white; border-radius: 5px;" class="visa">
+    <center><img style="height: 50px; width: 50px;position: relative; top: -6px;" src="assets/card.png" alt=""></center>
+   </div>
+   <div style="border: 1px solid black; height: 40px; width: 60px;position: relative; left: 1205px; top: -554px; background-color: white; border-radius: 5px;" class="visa">
+    <center><img style="height: 50px; width: 50px;position: relative; top: -6px;" src="assets/paytm.png" alt=""></center>
+   </div>
+   <div style="border: 1px solid black; height: 40px; width: 60px;position: relative; left: 1305px; top: -596px; background-color: white; border-radius: 5px;" class="visa">
+    <center><img style="height: 50px; width: 50px;position: relative; top: -6px;" src="assets/bank.png" alt=""></center>
+   </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+b=input("enter number :")
+c=input("enter number :")
+b=int(b)
+c=int(c)
+print(b+c)
+
+a=input("enter number :")
+d=input("enter number :")
+a=float(a)
+d=float(d)
+print(a+d)
